@@ -1,0 +1,63 @@
+/* style.css - Matching Deep Blue and Orange Theme from Kitty */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a1b2b; /* Deep midnight blue from Kitty */
+    color: #e0e0e0; /* Light gray for readable text */
+    font-family: "JetBrains Mono", monospace; /* Matches Kitty’s font */
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Terminal-Like Appearance */
+.terminal-container {
+    background-color: rgba(10, 27, 43, 0.9); /* Slight transparency like Kitty’s 0.9 opacity */
+    padding: 5px; /* Matches Kitty’s window_padding_width */
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Cursor Simulation */
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-color: #ff8c00; /* Orange cursor from Kitty */
+    animation: blink 0.5s infinite;
+}
+
+/* Selection Styling */
+::selection {
+    background: #ff8c00; /* Orange highlight from Kitty */
+    color: #0a1b2b; /* Dark blue text on highlight */
+}
+
+/* Color Palette Classes (Matching Kitty’s Colors) */
+.color0  { color: #0a1b2b; }
+.color1  { color: #ff4d4d; }
+.color2  { color: #33cc33; }
+.color3  { color: #ffcc00; }
+.color4  { color: #1e90ff; }
+.color5  { color: #ff8c00; }
+.color6  { color: #00cccc; }
+.color7  { color: #d9d9d9; }
+.color8  { color: #204060; }
+.color9  { color: #ff6666; }
+.color10 { color: #4dff4d; }
+.color11 { color: #ffd633; }
+.color12 { color: #4da8ff; }
+.color13 { color: #ffa31a; }
+.color14 { color: #1affff; }
+.color15 { color: #f2f2f2; }
+
+/* Animation for Cursor Blink */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

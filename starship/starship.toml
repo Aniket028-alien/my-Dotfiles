@@ -1,0 +1,35 @@
+# Starship Prompt with Light Blue -> Dark Blue -> Light Orange Gradient
+format = """
+[](#87CEEB)[  ](bg:#87CEEB fg:#000000)[](fg:#87CEEB bg:#4682B4)$directory[](fg:#4682B4 bg:#FFA07A)$time[](fg:#FFA07A bg:#000000)
+"""
+
+[directory]
+style = "bg:#4682B4 fg:#F5F5DC"
+truncation_length = 0
+truncate_to_repo = false
+read_only = " "
+fish_style_pwd_dir_length = 1
+format = "[ $path ]($style)"
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bg:#FFA07A fg:#1C2526"
+format = "[ $time ]($style)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
