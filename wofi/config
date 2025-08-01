@@ -1,4 +1,6 @@
-show-icons=true
+show-icons = true
+allow_images = true
+image-size = 32
 prompt=Search:
 width=800
 height=500

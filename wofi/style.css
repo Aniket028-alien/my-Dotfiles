@@ -50,10 +50,6 @@
 @define-color	mantle-rgb  rgb(24, 24, 37);
 @define-color	crust  #11111b;
 @define-color	crust-rgb  rgb(17, 17, 27);
-@define-color black #000000;
-@define-color black-rgb rgb(0, 0, 0);
-
-
 
 * {
   font-family: 'CaskaydiaCove Nerd Font', monospace;
@@ -64,9 +60,9 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid @lavender;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: @base;
 }
 
 /* Inner Box */
@@ -74,7 +70,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: @lavender rgba(255, 255, 255, 0.38);
+  background-color: @base;
 }
 
 /* Outer Box */
@@ -82,7 +78,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: @base;
 }
 
 /* Scroll */
@@ -90,7 +86,7 @@ window {
   margin: 0px;
   padding: 10px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: @base;
 }
 
 /* Input */
@@ -100,7 +96,7 @@ window {
   border: none;
   border-radius: 0.1em;
   color: @text;
-  background-color: @mauve;//rgba(255, 255, 255, 0.25);
+  background-color: @base;
 }
 
 #input image {
@@ -116,11 +112,11 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: @black;
+  color: @text;
 }
 
 #entry {
-  background-color: transparent;
+  background-color: @base;
 }
 
 #entry arrow {
